@@ -1,0 +1,95 @@
+<!DOCTYPE html><html style=overflow:hidden><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel="shortcut icon" href=favicon.ico><meta name=description content="Draw sequence diagrams in seconds using
+    this free online tool."><title>WebSequenceDiagrams - Draw sequence diagrams online in seconds</title><style>#splash {
+            background: #666;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: 10000;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .splashtitle {
+            animation-name: splash;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            position: absolute;
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        @keyframes splash {
+            from {
+                -webkit-transform: scale(0.1, 0.1) rotate(-30deg);
+                -moz-transform: scale(0.1, 0.1) rotate(-30deg);
+                -ms-transform: scale(0.1, 0.1) rotate(-30deg);
+            }
+
+            to {
+                -webkit-transform: scale(1.0, 1.0);
+                -moz-transform: scale(1.0, 1.0);
+                -ms-transform: scale(1.0, 1.0);
+            }
+        }
+
+        .myeditor .ace_comment {
+            color: lightgreen;
+        }
+
+        .myeditor .ace_keyword {
+            color: yellow;
+        }
+
+        .myeditor .ace_variable {
+            color: cyan;
+        }</style><link href=logo.svg rel=preload><link href=css/app.css rel=preload as=style><link href=js/app.js rel=preload as=script><link href=js/chunk-vendors.js rel=preload as=script><link href=css/app.css rel=stylesheet></head><body><noscript><strong>We're sorry but Wsd doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=splash><div class=splashtitle><img src=logo.svg><br><br>Starting WebSequenceDiagrams<br><img src=ajax-666.gif id=splash-spinner><div id=problem style=display:none;font-size:large>Problem with Internet Connection<br><br><input type=button onclick=window.location.reload() value="Try again" style="font-size: large"></div></div></div><div id=app></div><script>try {
+            var LICENSE_VALID = true;
+            var WSDCONFIG = {"allowGoogleSignIn":true,"googleClientId":"601465063395-uvfu1qlq6h35uspge15eeel1tgmulmf9.apps.googleusercontent.com","signInMethod":"user-managed","enterprise":true};
+        } catch (e) {
+            console.log("Could not find %o, %o", true, {"allowGoogleSignIn":true,"googleClientId":"601465063395-uvfu1qlq6h35uspge15eeel1tgmulmf9.apps.googleusercontent.com","signInMethod":"user-managed","enterprise":true});
+        }</script><script>if (typeof WSDCONFIG === "undefined") {
+            WSDCONFIG = { "allowGoogleSignIn": true, "enterprise": true, "googleClientId": "601465063395-uvfu1qlq6h35uspge15eeel1tgmulmf9.apps.googleusercontent.com", "signInMethod": "user-managed" };
+            LICENSE_VALID = true;
+        }
+        console.log("WSDCONFIG has been set: %o", WSDCONFIG);</script><script>if (!window.IsWebEdition) {
+            window.IsWebEdition = function () {
+                return location.hash.indexOf("web") >= 0 ||
+                    document.location.href.indexOf("http://www.websequencediagrams.com") === 0 ||
+                    document.location.href.indexOf("https://www.websequencediagrams.com") === 0;
+            }
+        }
+        if (IsWebEdition()) {
+            // Stripe.js
+            document.write(unescape('%3Cscript async defer src="https://js.stripe.com/v3/"%3E%3C/script%3E'))
+
+            // Stripe checkout
+            document.write(unescape('%3Cscript defer src="https://checkout.stripe.com/checkout.js"%3E%3C/script%3E'));
+
+            // Google tracking
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript defer src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+
+        if (IsWebEdition()) {
+            window.addEventListener("load", function () {
+                if ("_gat" in window) {
+                    var pageTracker = _gat._getTracker("UA-5751047-1");
+                    pageTracker._trackPageview();
+                }
+            });
+        }</script><script>try {
+            if (false && !("wsdok" in window)) {
+                document.getElementById("problem").style.display = "block";
+                document.getElementById("splash-spinner").style.visibility = "hidden";
+            }
+        } catch (e) {
+            Tracker.event("exception", "error=" + encodeURIComponent("" + e));
+            throw e;
+        }</script><script src=jquery-3.4.1.min.js></script><script src=ace.js></script><script src=ext-language_tools.js></script><script src=js/chunk-vendors.js></script><script src=js/app.js></script></body></html>
